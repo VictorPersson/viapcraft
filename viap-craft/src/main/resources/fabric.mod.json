@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "vc",
+  "version": "${version}",
+
+  "name": "ViapCraft",
+  "description": "First mod for learning Java",
+  "authors": [
+    "Victor Persson"
+  ],
+  "contact": {
+    "homepage": "https://github.com/VictorPersson",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/vc/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.viap.viapcraft.Viapcraft"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
