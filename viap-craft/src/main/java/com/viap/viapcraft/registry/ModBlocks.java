@@ -27,7 +27,7 @@ public class ModBlocks {
             .luminance(1));
 
     // New block, can add many attributes
-    public static final Block DARK_RUBY_ORE = new Block(FabricBlockSettings
+    public static final Block DARK_RUBY_ORE = new ModBlockDarkRubyOre(FabricBlockSettings
             // Sound when you break the block
             .of(Material.STONE)
             // Will break faster with pickaxes, 1-4 (2 is iron pickaxe)
