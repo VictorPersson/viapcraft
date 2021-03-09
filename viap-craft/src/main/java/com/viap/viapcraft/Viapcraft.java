@@ -39,6 +39,7 @@ public class Viapcraft implements ModInitializer {
             .appendItems(stacks -> {
                 // This way items will come in the order you list them.
                 stacks.add(new ItemStack(ModItems.DARK_RUBY));
+                stacks.add(new ItemStack(ModItems.CRYSTALIZED_DARK_RUBY));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_ORE));

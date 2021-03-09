@@ -1,6 +1,7 @@
 package com.viap.viapcraft.registry;
 
 import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.food.LSDFoodComponent;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.item.BlockItem;
@@ -24,10 +25,14 @@ public class ModItems {
     // ITEMS:
     // Where in the create menu to add the item, in this case - our own made general item group
     public static final Item DARK_RUBY = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
+    public static final Item CRYSTALIZED_DARK_RUBY = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
 
     // BLOCK ITEMS:
     public static final BlockItem DARK_RUBY_BLOCK = new BlockItem(ModBlocks.DARK_RUBY_BLOCK, new Item.Settings().group(Viapcraft.ITEM_GROUP));
     public static final BlockItem DARK_RUBY_ORE = new BlockItem(ModBlocks.DARK_RUBY_ORE, new Item.Settings().group(Viapcraft.ITEM_GROUP));
+
+    // FOODS:
+    public static final Item LSD = new Item(new Item.Settings().group(ItemGroup.FOOD).food(LSDFoodComponent.LSD));
 
     // TOOLS:
     public static final Item DARK_RUBY_PICKAXE = new PickaxeBase(new ToolMaterialFabric());
@@ -35,9 +40,10 @@ public class ModItems {
     // Register the item to the game, needs to be called in main class Viapcraft
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby"), DARK_RUBY);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "crystalized_dark_ruby"), CRYSTALIZED_DARK_RUBY);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_block"), DARK_RUBY_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_ore"), DARK_RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_pickaxe"), DARK_RUBY_PICKAXE);
-
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "lsd_food"), LSD);
     }
 }
