@@ -9,7 +9,6 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -43,21 +42,28 @@ public class Viapcraft implements ModInitializer {
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_ORE));
-                stacks.add(new ItemStack(Items.EMERALD));
-                stacks.add(new ItemStack(Blocks.EMERALD_BLOCK));
-                stacks.add(new ItemStack(Items.REDSTONE));
-                stacks.add(new ItemStack(Blocks.REDSTONE_BLOCK));
-                stacks.add(new ItemStack(Items.DIAMOND));
-                stacks.add(new ItemStack(Items.DIAMOND_BLOCK));
+                stacks.add(new ItemStack(ModBlocks.THORIUM_ORE));
+                stacks.add(new ItemStack(ModBlocks.MITHRIL_ORE));
+                stacks.add(new ItemStack(ModItems.THORIUM_BAR));
+
             }).build();
 
+    // Spawn ores in overworld
     private static final ConfiguredFeature<?, ?> DARK_RUBY_ORE_OVERWORLD = Feature.ORE.configure(
             // Setting how many of the ore will be spawned in one cluster
-            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.DARK_RUBY_ORE.getDefaultState(), 9))
+            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.DARK_RUBY_ORE.getDefaultState(), 4))
             // Setting minimum/max Y level of ore generation, ex only top of mountains would be (0, 120, 0). Everywhere = 0.
             // .spreadHorizontally() makes it generate in clusters and not in one straight line/pilar.
             // .repeat() how many of the blocks should generate in a chunk (16x16 area). Rare would be 1-2.
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 120 ))).spreadHorizontally().repeat(20);
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 120 ))).spreadHorizontally().repeat(10);
+
+    public static final ConfiguredFeature<?, ?> THORIUM_ORE_OVERWORLD = Feature.ORE.configure(
+            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.THORIUM_ORE.getDefaultState(), 4))
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0,0,120))).spreadHorizontally().repeat(3);
+
+    public static final ConfiguredFeature<?, ?> MITHRIL_ORE_OVERWORLD = Feature.ORE.configure(
+            new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.MITHRIL_ORE.getDefaultState(), 4))
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0,15,120))).spreadHorizontally().repeat(3);
 
     @Override
     public void onInitialize() {
@@ -68,5 +74,13 @@ public class Viapcraft implements ModInitializer {
         RegistryKey<ConfiguredFeature<?,?>> darkRubyOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("viapcraft", "dark_ruby_ore"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, darkRubyOreOverworld.getValue(), DARK_RUBY_ORE_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, darkRubyOreOverworld);
+
+        RegistryKey<ConfiguredFeature<?, ?>> thoriumOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("viapcraft", "thorium_ore"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, thoriumOreOverworld.getValue(), THORIUM_ORE_OVERWORLD);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, thoriumOreOverworld);
+
+        RegistryKey<ConfiguredFeature<?, ?>> mithrilOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("viapcraft", "mithril_ore"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, mithrilOreOverworld.getValue(), MITHRIL_ORE_OVERWORLD);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, mithrilOreOverworld);
     }
 }

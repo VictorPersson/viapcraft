@@ -19,31 +19,42 @@ public class ModBlocks {
             .breakByTool(FabricToolTags.PICKAXES, 2)
             // Must have a tool to mine
             .requiresTool()
-            // Diamond has hadness streight of 5.0f, 2nd param is how hard it is to explode
+            // Diamond has hardness strength of 5.0f, 2nd param is how hard it is to explode
             .strength(4.5f, 25.0f)
             // Sound of block when you walk over it.
             .sounds(BlockSoundGroup.METAL)
             // Makes the block glow
-            .luminance(1));
+            .luminance(0));
 
     // New block, can add many attributes
     public static final Block DARK_RUBY_ORE = new ModBlockDarkRubyOre(FabricBlockSettings
-            // Sound when you break the block
             .of(Material.STONE)
-            // Will break faster with pickaxes, 1-4 (2 is iron pickaxe)
             .breakByTool(FabricToolTags.PICKAXES, 2)
-            // Must have a tool to mine
             .requiresTool()
-            // Diamond has hadness streight of 5.0f, 2nd param is how hard it is to explode
-            .strength(4.5f, 35.0f)
-            // Sound of block when you walk over it.
+            .strength(4.0f, 35.0f)
             .sounds(BlockSoundGroup.STONE)
-            // Makes the block glow
-            .luminance(5));
+            .luminance(0));
+
+    public static final Block THORIUM_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .breakByTool(FabricToolTags.PICKAXES, 3)
+            .requiresTool()
+            .strength(5.0f, 40.f)
+            .sounds(BlockSoundGroup.STONE)
+            .luminance(0));
+
+    public static final Block MITHRIL_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            .breakByTool(FabricToolTags.PICKAXES, 3)
+            .strength(6.0f, 100.f)
+            .sounds(BlockSoundGroup.STONE)
+            .luminance(8));
 
     // This  needs to be called in start of init in main class.
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "dark_ruby_block"), DARK_RUBY_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "dark_ruby_ore"), DARK_RUBY_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "thorium_ore"), THORIUM_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "mithril_ore"), MITHRIL_ORE);
     }
 }

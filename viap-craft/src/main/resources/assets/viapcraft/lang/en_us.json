@@ -1,10 +1,13 @@
 {
   "item.viapcraft.dark_ruby": "Dark ruby",
+  "item.viapcraft.thorium_bar": "Thorium Bar",
   "item.viapcraft.crystalized_dark_ruby": "Crystalized dark ruby",
   "item.viapcraft.dark_ruby_pickaxe": "Dark ruby pickaxe",
   "item.viapcraft.lsd_food": "LSD",
   "block.viapcraft.dark_ruby_block": "Dark ruby block",
   "block.viapcraft.dark_ruby_ore": "Dark ruby ore",
+  "block.viapcraft.thorium_ore": "Thorium Ore",
+  "block.viapcraft.mithril_ore": "Mithril Ore",
   "itemGroup.viapcraft.general_item_group_name": "Viapcraft",
   "itemGroup.viapcraft.advanced_item_group_name": "Magic ores"
 
