@@ -5,12 +5,12 @@
 
 #### How to run & contribute.
 1. Clone this repo
-2. Open your IDE
-3. Navigatie to the repo folder and open the `build.gradle` file (open as project)
-4. 5. NOTE: If an [icon of an elephant](https://i.imgur.com/3Sd7nny.png) appears in the top right corver of your scree, press it. 
-5. After the project is done building, in your IDE, go to the menu option `Run > Edit configurations`
-6. Select `Application > Minecraft Client` [(should look like this)](https://i.imgur.com/zd2nV3Q.png) and press OK
-7. Now you should be able to run the mod by pressing the "Run" button.
+2. Open your IDE, [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
+3. Navigatie to the repo and open the `build.gradle` file (open as project)
+ 3.1. NOTE: If [this icon of an elephant](https://i.imgur.com/3Sd7nny.png) appears in the top right corner, press it. 
+4. After the project is done building, go to the menu option `Run > Edit configurations`
+5. Select `Application > Minecraft Client` [(should look like this)](https://i.imgur.com/zd2nV3Q.png) and press OK
+6. Now you should be able to run the mod by pressing the "Run" button.
 
 #### Texture changes:
 * All items which spawn in the world, such as Ore blocks, should be `16x16` pixels in size. 
