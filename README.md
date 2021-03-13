@@ -1,13 +1,13 @@
 # Viapcraft :crystal_ball:
 
-### Minecraft 1.16.5 Mod made built with the [Fabric API](https://fabricmc.net/)
+### Minecraft 1.16.5 Mod developed with the [Fabric API](https://fabricmc.net/)
 * Currently in development.
 
 #### How to run & contribute.
 1. Clone this repo
 2. Open your IDE, [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
 3. Navigatie to the repo and open the `build.gradle` file (open as project)
- 3.1. NOTE: If [this icon of an elephant](https://i.imgur.com/3Sd7nny.png) appears in the top right corner, press it. 
+ > 3.1 NOTE: If [this elephant icon](https://i.imgur.com/3Sd7nny.png) appears in the top right corner, press it. 
 4. After the project is done building, go to the menu option `Run > Edit configurations`
 5. Select `Application > Minecraft Client` [(should look like this)](https://i.imgur.com/zd2nV3Q.png) and press OK
 6. Now you should be able to run the mod by pressing the "Run" button.
