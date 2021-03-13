@@ -1,6 +1,7 @@
 package com.viap.viapcraft.registry;
 
 import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.ores.ModBlockDarkRubyOre;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
@@ -46,9 +47,10 @@ public class ModBlocks {
     public static final Block MITHRIL_ORE = new Block(FabricBlockSettings
             .of(Material.STONE)
             .breakByTool(FabricToolTags.PICKAXES, 3)
+            .requiresTool()
             .strength(6.0f, 100.f)
             .sounds(BlockSoundGroup.STONE)
-            .luminance(8));
+            .luminance(0));
 
     // This  needs to be called in start of init in main class.
     public static void registerBlocks() {

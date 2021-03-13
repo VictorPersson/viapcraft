@@ -1,4 +1,4 @@
-package com.viap.viapcraft.registry;
+package com.viap.viapcraft.tools;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
