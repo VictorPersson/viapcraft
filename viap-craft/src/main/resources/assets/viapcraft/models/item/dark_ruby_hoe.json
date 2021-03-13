@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "viapcraft:items/dark_ruby_hoe"
+  }
+}

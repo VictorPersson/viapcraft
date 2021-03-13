@@ -40,11 +40,19 @@ public class Viapcraft implements ModInitializer {
                 stacks.add(new ItemStack(ModItems.DARK_RUBY));
                 stacks.add(new ItemStack(ModItems.CRYSTALIZED_DARK_RUBY));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
-                stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
                 stacks.add(new ItemStack(ModBlocks.DARK_RUBY_ORE));
                 stacks.add(new ItemStack(ModBlocks.THORIUM_ORE));
-                stacks.add(new ItemStack(ModBlocks.MITHRIL_ORE));
                 stacks.add(new ItemStack(ModItems.THORIUM_BAR));
+                stacks.add(new ItemStack(ModBlocks.MITHRIL_ORE));
+                stacks.add(new ItemStack(ModItems.MITHRIL_BAR));
+                stacks.add(new ItemStack(ModItems.LSD));
+                stacks.add(new ItemStack(ModItems.COCAINE));
+                stacks.add(new ItemStack(ModItems.MARIJUANA));
+                stacks.add(new ItemStack(ModItems.DARK_RUBY_PICKAXE));
+                stacks.add(new ItemStack(ModItems.DARK_RUBY_AXE));
+                stacks.add(new ItemStack(ModItems.DARK_RUBY_SHOVEL));
+                stacks.add(new ItemStack(ModItems.DARK_RUBY_SWORD));
+                stacks.add(new ItemStack(ModItems.DARK_RUBY_HOE));
 
             }).build();
 

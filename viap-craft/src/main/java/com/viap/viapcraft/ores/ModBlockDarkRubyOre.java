@@ -1,4 +1,4 @@
-package com.viap.viapcraft.registry;
+package com.viap.viapcraft.ores;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

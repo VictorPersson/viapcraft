@@ -1,10 +1,10 @@
-package com.viap.viapcraft.registry;
+package com.viap.viapcraft.tools;
 
-import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ToolMaterialFabric implements ToolMaterial {
+public class PickaxeToolMaterialDarkRuby implements ToolMaterial {
     @Override
     // Wood 59, Stone 131, Iron 250, Diamond 1561
     public int getDurability() {
@@ -25,7 +25,7 @@ public class ToolMaterialFabric implements ToolMaterial {
 
     @Override
     // What lvl blocks can it break:
-    // Wood/Gold 0, Stone 1, Iron 2, Diamond 3
+    // Wood/Gold 0, Stone 1, Iron 2, Diamond 3, Netherite 4
     public int getMiningLevel() {
         return 2;
     }
