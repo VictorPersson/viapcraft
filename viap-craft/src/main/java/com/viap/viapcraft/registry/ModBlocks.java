@@ -1,6 +1,7 @@
 package com.viap.viapcraft.registry;
 
 import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.crops.ModBlockCocaPlant;
 import com.viap.viapcraft.ores.ModBlockDarkRubyOre;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -52,11 +53,20 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.STONE)
             .luminance(0));
 
+    public static final Block COCA_PLANT = new ModBlockCocaPlant(FabricBlockSettings
+            .of(Material.PLANT)
+            .noCollision()
+            .ticksRandomly()
+            .strength(0.5f, 0.3f)
+            .sounds(BlockSoundGroup.CROP)
+            .nonOpaque());
+
     // This  needs to be called in start of init in main class.
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "dark_ruby_block"), DARK_RUBY_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "dark_ruby_ore"), DARK_RUBY_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "thorium_ore"), THORIUM_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "mithril_ore"), MITHRIL_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "coca_plant"), COCA_PLANT);
     }
 }

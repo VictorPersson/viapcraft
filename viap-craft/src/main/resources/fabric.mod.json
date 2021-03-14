@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.viap.viapcraft.Viapcraft"
+    ],
+    "client": [
+      "com.viap.viapcraft.CropsClient"
     ]
   },
   "mixins": [

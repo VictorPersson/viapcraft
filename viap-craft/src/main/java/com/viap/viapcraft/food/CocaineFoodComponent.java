@@ -11,8 +11,8 @@ public class CocaineFoodComponent {
             .saturationModifier(.3f)
             .alwaysEdible()
             .snack()
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1000), 1)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 1000, 1), 1)
-            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 500, 5), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2000), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 2000, 1), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1000, 5), 1)
             .build();
 }

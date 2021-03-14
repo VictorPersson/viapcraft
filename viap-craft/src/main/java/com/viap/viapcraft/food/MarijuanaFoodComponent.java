@@ -10,10 +10,10 @@ public class MarijuanaFoodComponent {
             .saturationModifier(.5f)
             .alwaysEdible()
             .snack()
-            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 1000), .5f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 2000, 1), 1)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1000), 1)
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1000, 4), 1)
-            .statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 500), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 2000), .5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 3000, 1), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 2000), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 2000, 4), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 100), 1)
             .build();
 }

@@ -53,6 +53,9 @@ public class Viapcraft implements ModInitializer {
                 stacks.add(new ItemStack(ModItems.DARK_RUBY_SHOVEL));
                 stacks.add(new ItemStack(ModItems.DARK_RUBY_SWORD));
                 stacks.add(new ItemStack(ModItems.DARK_RUBY_HOE));
+                stacks.add(new ItemStack(ModItems.COCA_LEAF));
+                stacks.add(new ItemStack(ModBlocks.COCA_PLANT));
+                stacks.add(new ItemStack(ModItems.COCA_SEED));
 
             }).build();
 
@@ -63,7 +66,7 @@ public class Viapcraft implements ModInitializer {
             // Setting minimum/max Y level of ore generation, ex only top of mountains would be (0, 120, 0). Everywhere = 0.
             // .spreadHorizontally() makes it generate in clusters and not in one straight line/pilar.
             // .repeat() how many of the blocks should generate in a chunk (16x16 area). Rare would be 1-2.
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 120 ))).spreadHorizontally().repeat(10);
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 120 ))).spreadHorizontally().repeat(9);
 
     public static final ConfiguredFeature<?, ?> THORIUM_ORE_OVERWORLD = Feature.ORE.configure(
             new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.THORIUM_ORE.getDefaultState(), 4))
