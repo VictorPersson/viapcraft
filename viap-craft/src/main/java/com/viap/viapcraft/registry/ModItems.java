@@ -1,6 +1,8 @@
 package com.viap.viapcraft.registry;
 
 import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.crops.ItemCocaSeed;
+import com.viap.viapcraft.food.CocaLeafFoodComponent;
 import com.viap.viapcraft.food.CocaineFoodComponent;
 import com.viap.viapcraft.food.LSDFoodComponent;
 import com.viap.viapcraft.food.MarijuanaFoodComponent;
@@ -31,6 +33,10 @@ public class ModItems {
     public static final Item LSD = new Item(new Item.Settings().group(ItemGroup.FOOD).food(LSDFoodComponent.LSD));
     public static final Item MARIJUANA = new Item(new Item.Settings().group(ItemGroup.FOOD).food(MarijuanaFoodComponent.MARIJUANA));
     public static final Item COCAINE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(CocaineFoodComponent.COCAINE));
+    public static final Item COCA_LEAF = new Item(new Item.Settings().group(ItemGroup.FOOD).food(CocaLeafFoodComponent.COCA_LEAF));
+
+    // Crops
+    public static final Item COCA_SEED = new ItemCocaSeed(ModBlocks.COCA_PLANT, (new Item.Settings().group(Viapcraft.ITEM_GROUP)));
 
     // TOOLS:
     public static final Item DARK_RUBY_PICKAXE = new PickaxeBase(new PickaxeToolMaterialDarkRuby());
@@ -57,6 +63,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "lsd_food"), LSD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "marijuana_food"), MARIJUANA);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "cocaine_food"), COCAINE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_seed"), COCA_SEED);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_leaf_food"), COCA_LEAF);
 
     }
 }
