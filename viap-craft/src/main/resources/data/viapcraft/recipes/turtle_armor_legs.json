@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "S S",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:scute"
+    }
+  },
+  "result": {
+    "item": "viapcraft:turtle_armor_legs",
+    "count": 1
+  },
+  "group": "viapcraft"
+}
