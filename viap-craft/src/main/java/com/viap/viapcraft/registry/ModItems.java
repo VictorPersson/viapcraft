@@ -1,12 +1,17 @@
 package com.viap.viapcraft.registry;
 
 import com.viap.viapcraft.Viapcraft;
+import com.viap.viapcraft.armour.ArmorBase;
+import com.viap.viapcraft.armour.DarkRubyArmorMaterial;
+import com.viap.viapcraft.armour.TurtleArmorMaterial;
 import com.viap.viapcraft.crops.ItemCocaSeed;
 import com.viap.viapcraft.food.CocaLeafFoodComponent;
 import com.viap.viapcraft.food.CocaineFoodComponent;
 import com.viap.viapcraft.food.LSDFoodComponent;
 import com.viap.viapcraft.food.MarijuanaFoodComponent;
 import com.viap.viapcraft.tools.*;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -45,6 +50,10 @@ public class ModItems {
     public static final Item DARK_RUBY_SWORD = new SwordBase(new SwordToolMaterialDarkRuby());
     public static final Item DARK_RUBY_HOE = new HoeBase(new HoeToolMaterialDarkRuby());
 
+    // Armor
+    public static final ArmorMaterial DARK_RUBY_ARMOR = new DarkRubyArmorMaterial();
+    public static final ArmorMaterial TURTLE_ARMOR = new TurtleArmorMaterial();
+
     // Register the item to the game, needs to be called in main class Viapcraft
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby"), DARK_RUBY);
@@ -65,6 +74,12 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "cocaine_food"), COCAINE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_seed"), COCA_SEED);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_leaf_food"), COCA_LEAF);
-
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_helmet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.HEAD));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_chest"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_legs"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_feet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.FEET));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_chest"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_legs"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_feet"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.FEET));
     }
 }
