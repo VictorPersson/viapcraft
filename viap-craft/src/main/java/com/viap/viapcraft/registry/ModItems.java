@@ -74,10 +74,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "cocaine_food"), COCAINE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_seed"), COCA_SEED);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_leaf_food"), COCA_LEAF);
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_helmet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.HEAD));
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_chest"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.CHEST));
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_legs"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.LEGS));
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_feet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.FEET));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_helmet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.HEAD));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_chest"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_legs"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_feet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.FEET));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_chest"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_legs"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_feet"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.FEET));
