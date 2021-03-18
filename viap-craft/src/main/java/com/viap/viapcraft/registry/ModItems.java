@@ -11,10 +11,7 @@ import com.viap.viapcraft.food.LSDFoodComponent;
 import com.viap.viapcraft.food.MarijuanaFoodComponent;
 import com.viap.viapcraft.tools.*;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -47,8 +44,11 @@ public class ModItems {
     public static final Item DARK_RUBY_PICKAXE = new PickaxeBase(new PickaxeToolMaterialDarkRuby());
     public static final Item DARK_RUBY_AXE = new AxeBase(new AxeToolMaterialDarkRuby());
     public static final Item DARK_RUBY_SHOVEL = new ShovelBase(new ShovelToolMaterialDarkRuby());
-    public static final Item DARK_RUBY_SWORD = new SwordBase(new SwordToolMaterialDarkRuby());
+    public static final Item DARK_RUBY_SWORD = new WeaponBase(new SwordToolMaterialDarkRuby());
     public static final Item DARK_RUBY_HOE = new HoeBase(new HoeToolMaterialDarkRuby());
+    //public static final Item STONE_DAGGER = new WeaponBase(new DaggerBase(3, 100, 100, Items.COBBLESTONE));
+
+    public static Item STONE_DAGGER = new SwordItem(new DaggerBase(3, 100, 100, Items.COBBLESTONE), 3, 3.5f, new Item.Settings().group(ItemGroup.TOOLS));
 
     // Armor
     public static final ArmorMaterial DARK_RUBY_ARMOR = new DarkRubyArmorMaterial();
@@ -81,5 +81,6 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_chest"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_legs"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_feet"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.FEET));
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "stone_dagger"), STONE_DAGGER);
     }
 }

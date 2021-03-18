@@ -27,5 +27,6 @@
   "block.viapcraft.mithril_ore": "Mithril Ore",
   "item.viapcraft.mithril_bar": "Mithril Bar",
   "itemGroup.viapcraft.general_item_group_name": "Viapcraft",
-  "itemGroup.viapcraft.advanced_item_group_name": "Magic ores"
+  "itemGroup.viapcraft.advanced_item_group_name": "Magic ores",
+  "item.viapcraft.stone_dagger": "stone_dagger"
 }
