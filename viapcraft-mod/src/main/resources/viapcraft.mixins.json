@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.viap.viapcraft.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "ViapcraftMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

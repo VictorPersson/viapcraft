@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "viapcraft:mithril_ore"
+  },
+  "result": "viapcraft:mithril_bar",
+  "experience": 0.8,
+  "cookingtime": 700
+}
+
