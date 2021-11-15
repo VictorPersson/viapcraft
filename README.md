@@ -1,6 +1,6 @@
 # Viapcraft :crystal_ball:
 
-### Minecraft 1.16.5 Mod developed with the [Fabric API](https://fabricmc.net/)
+### Minecraft 1.17.1 Mod developed with the [Fabric API](https://fabricmc.net/)
 * Currently in development.
 
 #### How to run & contribute.
@@ -26,7 +26,7 @@
 #### Code & texture changes:
 * All changes and new features need to be first added to a new git branch. 
 This branches should be appropriately named feature/VPC-NUMBER. 
-  * Example `feature/VPC-1`
+  * Example `feature/VPC-1` or `bug/VPC-1` etc.
 * Commit your changes with a short title
   * Example: `Implement dark_ruby ore, dark_ruby texture`
 * Push your commit, then make a pull request.
