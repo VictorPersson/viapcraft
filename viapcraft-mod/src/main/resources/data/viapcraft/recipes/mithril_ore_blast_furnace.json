@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "viapcraft:mithril_ore"
+  },
+  "result": "viapcraft:mithril_bar",
+  "experience": 0.9,
+  "cookingtime": 400
+}

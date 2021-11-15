@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lll",
+    "lcl",
+    "lll"
+  ],
+  "key": {
+    "l": {
+      "item": "viapcraft:liquid_iron"
+    },
+    "c": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "viapcraft:steel_ingot"
+  }
+}

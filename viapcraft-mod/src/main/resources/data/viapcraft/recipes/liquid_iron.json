@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": "viapcraft:liquid_iron",
+  "experience": 0.8,
+  "cookingtime": 200
+}

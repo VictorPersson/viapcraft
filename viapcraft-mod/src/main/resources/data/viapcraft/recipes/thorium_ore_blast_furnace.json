@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "viapcraft:thorium_ore"
+  },
+  "result": "viapcraft:thorium_bar",
+  "experience": 0.8,
+  "cookingtime": 350
+}
