@@ -53,6 +53,12 @@ public class ModItems {
     public static final Item DARK_RUBY_SHOVEL = new ShovelBase(new ShovelToolMaterialDarkRuby());
     public static final Item DARK_RUBY_SWORD = new WeaponBase(new SwordToolMaterialDarkRuby());
     public static final Item DARK_RUBY_HOE = new HoeBase(new HoeToolMaterialDarkRuby());
+    // TEST TOOLS
+    public static final Item STEEL_SWORD = new SwordItem(ModToolMaterial.STEEL, 2, 1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
+    public static final Item STEEL_SHOVEL = new ShovelItem(ModToolMaterial.STEEL, 1, 1.4f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
+    public static final Item STEEL_PICKAXE = new ModPickaxeItem(ModToolMaterial.STEEL, 1, 1.5f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
+    public static final Item STEEL_AXE = new ModAxeItem(ModToolMaterial.STEEL, 1, 1.1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
+    public static final Item STEEL_HOE = new ModHoeItem(ModToolMaterial.STEEL, 0, 1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
 
     //public static final Item STONE_DAGGER = new WeaponBase(new DaggerBase(3, 100, 100, Items.COBBLESTONE));
 
@@ -96,5 +102,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "jade"), JADE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "refined_uranium"), REFINED_URANIUM);
         FuelRegistry.INSTANCE.add(REFINED_URANIUM, 500);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_sword"), STEEL_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_shovel"), STEEL_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_axe"), STEEL_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_hoe"), STEEL_HOE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_pickaxe"), STEEL_PICKAXE);
     }
 }
