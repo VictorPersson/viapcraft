@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "viapcraft:items/stone_dagger"
+    "layer0": "viapcraft:items/steel_sword"
   }
 }
