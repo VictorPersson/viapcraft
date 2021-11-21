@@ -22,21 +22,21 @@ public class ModItems {
 
     // ITEMS:
     // Where in the create menu to add the item, in this case - our own made general item group
-    public static final Item DARK_RUBY = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item CRYSTALIZED_DARK_RUBY = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item THORIUM_BAR = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item MITHRIL_BAR = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item LIQUID_IRON = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STEEL_INGOT = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item JADE = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STAFF_OF_MINERALS = new StaffOfMinerals(new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final Item REFINED_URANIUM = new Item(new Item.Settings().group(Viapcraft.ITEM_GROUP));
+    public static final Item DARK_RUBY = new Item(new Item.Settings());
+    public static final Item CRYSTALIZED_DARK_RUBY = new Item(new Item.Settings());
+    public static final Item THORIUM_BAR = new Item(new Item.Settings());
+    public static final Item MITHRIL_BAR = new Item(new Item.Settings());
+    public static final Item LIQUID_IRON = new Item(new Item.Settings());
+    public static final Item STEEL_INGOT = new Item(new Item.Settings());
+    public static final Item JADE = new Item(new Item.Settings());
+    public static final Item STAFF_OF_MINERALS = new StaffOfMinerals(new Item.Settings());
+    public static final Item REFINED_URANIUM = new Item(new Item.Settings());
 
     // BLOCK ITEMS:
-    public static final BlockItem DARK_RUBY_BLOCK = new BlockItem(ModBlocks.DARK_RUBY_BLOCK, new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final BlockItem DARK_RUBY_ORE = new BlockItem(ModBlocks.DARK_RUBY_ORE, new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final BlockItem THORIUM_ORE = new BlockItem(ModBlocks.THORIUM_ORE, new Item.Settings().group(Viapcraft.ITEM_GROUP));
-    public static final BlockItem MITHRIL_ORE = new BlockItem(ModBlocks.MITHRIL_ORE, new Item.Settings().group(Viapcraft.ITEM_GROUP));
+    public static final BlockItem DARK_RUBY_BLOCK = new BlockItem(ModBlocks.DARK_RUBY_BLOCK, new Item.Settings());
+    public static final BlockItem DARK_RUBY_ORE = new BlockItem(ModBlocks.DARK_RUBY_ORE, new Item.Settings());
+    public static final BlockItem THORIUM_ORE = new BlockItem(ModBlocks.THORIUM_ORE, new Item.Settings());
+    public static final BlockItem MITHRIL_ORE = new BlockItem(ModBlocks.MITHRIL_ORE, new Item.Settings());
 
     // FOODS:
     public static final Item LSD = new Item(new Item.Settings().group(ItemGroup.FOOD).food(LSDFoodComponent.LSD));
@@ -45,7 +45,7 @@ public class ModItems {
     public static final Item COCA_LEAF = new Item(new Item.Settings().group(ItemGroup.FOOD).food(CocaLeafFoodComponent.COCA_LEAF));
 
     // Crops
-    public static final Item COCA_SEED = new ItemCocaSeed(ModBlocks.COCA_PLANT, (new Item.Settings().group(Viapcraft.ITEM_GROUP)));
+    public static final Item COCA_SEED = new ItemCocaSeed(ModBlocks.COCA_PLANT, (new Item.Settings()));
 
     // TOOLS:
     public static final Item DARK_RUBY_PICKAXE = new PickaxeBase(new PickaxeToolMaterialDarkRuby());
@@ -54,11 +54,11 @@ public class ModItems {
     public static final Item DARK_RUBY_SWORD = new WeaponBase(new SwordToolMaterialDarkRuby());
     public static final Item DARK_RUBY_HOE = new HoeBase(new HoeToolMaterialDarkRuby());
     // TEST TOOLS
-    public static final Item STEEL_SWORD = new SwordItem(ModToolMaterial.STEEL, 2, 1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STEEL_SHOVEL = new ShovelItem(ModToolMaterial.STEEL, 1, 1.4f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STEEL_PICKAXE = new ModPickaxeItem(ModToolMaterial.STEEL, 1, 1.5f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STEEL_AXE = new ModAxeItem(ModToolMaterial.STEEL, 1, 1.1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
-    public static final Item STEEL_HOE = new ModHoeItem(ModToolMaterial.STEEL, 0, 1f, new FabricItemSettings().group(Viapcraft.ITEM_GROUP));
+    public static final Item STEEL_SWORD = new SwordItem(ModToolMaterial.STEEL, 2, 1f, new FabricItemSettings());
+    public static final Item STEEL_SHOVEL = new ShovelItem(ModToolMaterial.STEEL, 1, 1.4f, new FabricItemSettings());
+    public static final Item STEEL_PICKAXE = new ModPickaxeItem(ModToolMaterial.STEEL, 1, 1.5f, new FabricItemSettings());
+    public static final Item STEEL_AXE = new ModAxeItem(ModToolMaterial.STEEL, 1, 1.1f, new FabricItemSettings());
+    public static final Item STEEL_HOE = new ModHoeItem(ModToolMaterial.STEEL, 0, 1f, new FabricItemSettings());
 
     //public static final Item STONE_DAGGER = new WeaponBase(new DaggerBase(3, 100, 100, Items.COBBLESTONE));
 
