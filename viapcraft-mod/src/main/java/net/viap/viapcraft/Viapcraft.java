@@ -21,16 +21,17 @@ public class Viapcraft implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("modid");
 
 	// "Simple" way of making a item group for your mod. Can be made more advanced.
+	/*
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 			// Setting the path to the new tab, where it gets its name. Below, which icon tab should have
 			new Identifier(MOD_ID, "general_item_group_name"),
 			() -> new ItemStack(ModItems.DARK_RUBY)
 	);
-
+*/
 	// More advanced way of making an item group, custom icon vanilla/mod items.
 	public static final ItemGroup ADVANCED_GROUP = FabricItemGroupBuilder.create(
 					new Identifier(MOD_ID, "advanced_item_group_name"))
-			.icon(() -> new ItemStack(Blocks.ENCHANTING_TABLE))
+			.icon(() -> new ItemStack(ModItems.LSD))
 			.appendItems(stacks -> {
 				// This way items will come in the order you list them.
 				stacks.add(new ItemStack(ModItems.DARK_RUBY));
@@ -52,6 +53,16 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModItems.COCA_LEAF));
 				stacks.add(new ItemStack(ModBlocks.COCA_PLANT));
 				stacks.add(new ItemStack(ModItems.COCA_SEED));
+				stacks.add(new ItemStack(ModItems.LIQUID_IRON));
+				stacks.add(new ItemStack(ModItems.STEEL_INGOT));
+				stacks.add(new ItemStack(ModItems.STEEL_AXE));
+				stacks.add(new ItemStack(ModItems.STEEL_HOE));
+				stacks.add(new ItemStack(ModItems.STEEL_PICKAXE));
+				stacks.add(new ItemStack(ModItems.STEEL_SHOVEL));
+				stacks.add(new ItemStack(ModItems.STEEL_SWORD));
+				stacks.add(new ItemStack(ModItems.JADE));
+				stacks.add(new ItemStack(ModItems.STAFF_OF_MINERALS));
+				stacks.add(new ItemStack(ModItems.REFINED_URANIUM));
 			}).build();
 
 	@Override
