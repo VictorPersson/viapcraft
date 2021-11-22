@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "viapcraft:items/steel_axe"
+    "layer0": "viapcraft:items/thorium_pickaxe"
   }
 }

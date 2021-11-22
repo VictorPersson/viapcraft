@@ -53,12 +53,18 @@ public class ModItems {
     public static final Item DARK_RUBY_SHOVEL = new ShovelBase(new ShovelToolMaterialDarkRuby());
     public static final Item DARK_RUBY_SWORD = new WeaponBase(new SwordToolMaterialDarkRuby());
     public static final Item DARK_RUBY_HOE = new HoeBase(new HoeToolMaterialDarkRuby());
-    // TEST TOOLS
+
     public static final Item STEEL_SWORD = new SwordItem(ModToolMaterial.STEEL, 2, 1f, new FabricItemSettings());
     public static final Item STEEL_SHOVEL = new ShovelItem(ModToolMaterial.STEEL, 1, 1.4f, new FabricItemSettings());
     public static final Item STEEL_PICKAXE = new ModPickaxeItem(ModToolMaterial.STEEL, 1, 1.5f, new FabricItemSettings());
     public static final Item STEEL_AXE = new ModAxeItem(ModToolMaterial.STEEL, 1, 1.1f, new FabricItemSettings());
     public static final Item STEEL_HOE = new ModHoeItem(ModToolMaterial.STEEL, 0, 1f, new FabricItemSettings());
+
+    public static final Item THORIUM_SWORD = new SwordItem(ModToolMaterial.THORIUM, 3, .8f, new FabricItemSettings());
+    public static final Item THORIUM_SHOVEL = new ShovelItem(ModToolMaterial.THORIUM, 1, 1.4f, new FabricItemSettings());
+    public static final Item THORIUM_PICKAXE = new ModPickaxeItem(ModToolMaterial.THORIUM, 2, 1.6f, new FabricItemSettings());
+    public static final Item THORIUM_AXE = new ModAxeItem(ModToolMaterial.THORIUM, 3, 1.2f, new FabricItemSettings());
+    public static final Item THORIUM_HOE = new ModHoeItem(ModToolMaterial.THORIUM, 1, 1f, new FabricItemSettings());
 
     //public static final Item STONE_DAGGER = new WeaponBase(new DaggerBase(3, 100, 100, Items.COBBLESTONE));
 
@@ -107,5 +113,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_axe"), STEEL_AXE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_hoe"), STEEL_HOE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_pickaxe"), STEEL_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_sword"), THORIUM_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_shovel"), THORIUM_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_axe"), THORIUM_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_hoe"), THORIUM_HOE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_pickaxe"), THORIUM_PICKAXE);
     }
 }
