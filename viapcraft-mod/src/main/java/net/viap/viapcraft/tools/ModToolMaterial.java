@@ -12,7 +12,11 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    STEEL(MiningLevels.IRON, 500, 6.5F, 2.5F, 15, () -> {
+    STEEL(MiningLevels.IRON, 500, 6.5F, 2.5F, 13, () -> {
+        return Ingredient.ofItems(ModItems.STEEL_INGOT);
+    }),
+
+    THORIUM(MiningLevels.DIAMOND, 1000, 7.5F, 2.8F, 17, () -> {
         return Ingredient.ofItems(ModItems.STEEL_INGOT);
     });
 

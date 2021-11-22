@@ -63,6 +63,11 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModItems.JADE));
 				stacks.add(new ItemStack(ModItems.STAFF_OF_MINERALS));
 				stacks.add(new ItemStack(ModItems.REFINED_URANIUM));
+				stacks.add(new ItemStack(ModItems.THORIUM_PICKAXE));
+				stacks.add(new ItemStack(ModItems.THORIUM_AXE));
+				stacks.add(new ItemStack(ModItems.THORIUM_SHOVEL));
+				stacks.add(new ItemStack(ModItems.THORIUM_SWORD));
+				stacks.add(new ItemStack(ModItems.THORIUM_HOE));
 			}).build();
 
 	@Override
