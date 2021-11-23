@@ -24,8 +24,8 @@ public class ModItems {
     // Where in the create menu to add the item, in this case - our own made general item group
     public static final Item DARK_RUBY = new Item(new Item.Settings());
     public static final Item CRYSTALIZED_DARK_RUBY = new Item(new Item.Settings());
-    public static final Item THORIUM_BAR = new Item(new Item.Settings());
-    public static final Item MITHRIL_BAR = new Item(new Item.Settings());
+    public static final Item THORIUM_INGOT = new Item(new Item.Settings());
+    public static final Item MITHRIL_INGOT = new Item(new Item.Settings());
     public static final Item LIQUID_IRON = new Item(new Item.Settings());
     public static final Item STEEL_INGOT = new Item(new Item.Settings());
     public static final Item JADE = new Item(new Item.Settings());
@@ -66,6 +66,12 @@ public class ModItems {
     public static final Item THORIUM_AXE = new ModAxeItem(ModToolMaterial.THORIUM, 3, 1.2f, new FabricItemSettings());
     public static final Item THORIUM_HOE = new ModHoeItem(ModToolMaterial.THORIUM, 1, 1f, new FabricItemSettings());
 
+    public static final Item MITHRIL_SWORD = new SwordItem(ModToolMaterial.MITHRIL, 3, .8f, new FabricItemSettings().group(ItemGroup.TOOLS));
+    public static final Item MITHRIL_SHOVEL = new ShovelItem(ModToolMaterial.MITHRIL, 1, 1.4f, new FabricItemSettings().group(ItemGroup.TOOLS));
+    public static final Item MITHRIL_PICKAXE = new ModPickaxeItem(ModToolMaterial.MITHRIL, 2, 1.6f, new FabricItemSettings().group(ItemGroup.TOOLS));
+    public static final Item MITHRIL_AXE = new ModAxeItem(ModToolMaterial.MITHRIL, 3, 1.2f, new FabricItemSettings().group(ItemGroup.TOOLS));
+    public static final Item MITHRIL_HOE = new ModHoeItem(ModToolMaterial.MITHRIL, 1, 1f, new FabricItemSettings().group(ItemGroup.TOOLS));
+
     //public static final Item STONE_DAGGER = new WeaponBase(new DaggerBase(3, 100, 100, Items.COBBLESTONE));
 
     public static Item STONE_DAGGER = new SwordItem(new DaggerBase(3, 100, 100, Items.COBBLESTONE), 3, 3.5f, new Item.Settings().group(ItemGroup.TOOLS));
@@ -86,9 +92,9 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_sword"), DARK_RUBY_SWORD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_hoe"), DARK_RUBY_HOE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_ore"), THORIUM_ORE);
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_bar"), THORIUM_BAR);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_ingot"), THORIUM_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_ore"), MITHRIL_ORE);
-        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_bar"), MITHRIL_BAR);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_ingot"), MITHRIL_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "lsd"), LSD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "marijuana"), MARIJUANA);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "cocaine"), COCAINE);
@@ -108,15 +114,23 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "jade"), JADE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "refined_uranium"), REFINED_URANIUM);
         FuelRegistry.INSTANCE.add(REFINED_URANIUM, 500);
+
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_sword"), STEEL_SWORD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_shovel"), STEEL_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_axe"), STEEL_AXE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_hoe"), STEEL_HOE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_pickaxe"), STEEL_PICKAXE);
+
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_sword"), THORIUM_SWORD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_shovel"), THORIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_axe"), THORIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_hoe"), THORIUM_HOE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_pickaxe"), THORIUM_PICKAXE);
+
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_sword"), MITHRIL_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_shovel"), MITHRIL_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_axe"), MITHRIL_AXE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_hoe"), MITHRIL_HOE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_pickaxe"), MITHRIL_PICKAXE);
     }
 }

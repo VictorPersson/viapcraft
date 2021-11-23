@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "viapcraft:items/thorium_bar"
+    "layer0": "viapcraft:items/thorium_ingot"
   }
 }

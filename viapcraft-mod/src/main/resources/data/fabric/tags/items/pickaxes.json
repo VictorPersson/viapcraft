@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "viapcraft:steel_pickaxe"
+    "viapcraft:steel_pickaxe",
+    "viapcraft:thorium_pickaxe",
+    "viapcraft:mithril_pickaxe"
   ]
 }

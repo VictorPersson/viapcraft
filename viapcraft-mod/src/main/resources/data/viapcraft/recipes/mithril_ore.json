@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "viapcraft:mithril_ore"
   },
-  "result": "viapcraft:mithril_bar",
+  "result": "viapcraft:mithril_ingot",
   "experience": 0.8,
   "cookingtime": 700
 }

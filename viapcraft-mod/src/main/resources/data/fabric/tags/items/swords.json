@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "viapcraft:steel_swords"
+    "viapcraft:steel_swords",
+    "viapcraft:thorium_swords",
+    "viapcraft:mithril_swords"
   ]
 }
