@@ -17,7 +17,11 @@ public enum ModToolMaterial implements ToolMaterial {
     }),
 
     THORIUM(MiningLevels.DIAMOND, 1000, 7.5F, 2.8F, 17, () -> {
-        return Ingredient.ofItems(ModItems.STEEL_INGOT);
+        return Ingredient.ofItems(ModItems.THORIUM_INGOT);
+    }),
+
+    MITHRIL(MiningLevels.DIAMOND, 5000, 7.5F, 2.8F, 22, () -> {
+        return Ingredient.ofItems(ModItems.MITHRIL_INGOT);
     });
 
     private final int miningLevel;

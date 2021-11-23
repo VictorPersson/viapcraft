@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "viapcraft:items/mithril_pickaxe"
+  }
+}

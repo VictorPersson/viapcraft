@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "viapcraft:steel_axe"
+    "viapcraft:steel_axe",
+    "viapcraft:thorium_axe",
+    "viapcraft:mithril_axe"
   ]
 }

@@ -39,9 +39,9 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.DARK_RUBY_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.DARK_RUBY_ORE));
 				stacks.add(new ItemStack(ModBlocks.THORIUM_ORE));
-				stacks.add(new ItemStack(ModItems.THORIUM_BAR));
+				stacks.add(new ItemStack(ModItems.THORIUM_INGOT));
 				stacks.add(new ItemStack(ModBlocks.MITHRIL_ORE));
-				stacks.add(new ItemStack(ModItems.MITHRIL_BAR));
+				stacks.add(new ItemStack(ModItems.MITHRIL_INGOT));
 				stacks.add(new ItemStack(ModItems.LSD));
 				stacks.add(new ItemStack(ModItems.COCAINE));
 				stacks.add(new ItemStack(ModItems.MARIJUANA));
@@ -68,6 +68,11 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModItems.THORIUM_SHOVEL));
 				stacks.add(new ItemStack(ModItems.THORIUM_SWORD));
 				stacks.add(new ItemStack(ModItems.THORIUM_HOE));
+				stacks.add(new ItemStack(ModItems.MITHRIL_PICKAXE));
+				stacks.add(new ItemStack(ModItems.MITHRIL_AXE));
+				stacks.add(new ItemStack(ModItems.MITHRIL_SHOVEL));
+				stacks.add(new ItemStack(ModItems.MITHRIL_SWORD));
+				stacks.add(new ItemStack(ModItems.MITHRIL_HOE));
 			}).build();
 
 	@Override

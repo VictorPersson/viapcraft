@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    " / ",
+    " # ",
+    " # ",
     " / "
   ],
   "key": {
     "#": {
-      "item": "viapcraft:thorium_ingot"
+      "item": "viapcraft:mithril_ingot"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "viapcraft:thorium_pickaxe",
+    "item": "viapcraft:mithril_sword",
     "count": 1
   },
   "group": "viapcraft"

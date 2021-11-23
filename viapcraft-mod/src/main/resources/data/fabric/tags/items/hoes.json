@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "viapcraft:steel_hoe"
+    "viapcraft:steel_hoe",
+    "viapcraft:thorium_hoe",
+    "viapcraft:mithril_hoe"
   ]
 }
