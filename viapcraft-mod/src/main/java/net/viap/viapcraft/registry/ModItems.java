@@ -31,12 +31,14 @@ public class ModItems {
     public static final Item JADE = new Item(new Item.Settings());
     public static final Item STAFF_OF_MINERALS = new StaffOfMinerals(new Item.Settings());
     public static final Item REFINED_URANIUM = new Item(new Item.Settings());
+    public static final Item SAPPHIRE = new Item(new Item.Settings());
 
     // BLOCK ITEMS:
     public static final BlockItem DARK_RUBY_BLOCK = new BlockItem(ModBlocks.DARK_RUBY_BLOCK, new Item.Settings());
     public static final BlockItem DARK_RUBY_ORE = new BlockItem(ModBlocks.DARK_RUBY_ORE, new Item.Settings());
     public static final BlockItem THORIUM_ORE = new BlockItem(ModBlocks.THORIUM_ORE, new Item.Settings());
     public static final BlockItem MITHRIL_ORE = new BlockItem(ModBlocks.MITHRIL_ORE, new Item.Settings());
+    public static final BlockItem SAPPHIRE_ORE = new BlockItem(ModBlocks.SAPPHIRE_ORE, new Item.Settings());
 
     // FOODS:
     public static final Item LSD = new Item(new Item.Settings().group(ItemGroup.FOOD).food(LSDFoodComponent.LSD));
@@ -113,6 +115,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "staff_of_minerals"), STAFF_OF_MINERALS);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "jade"), JADE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "refined_uranium"), REFINED_URANIUM);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "sapphire"), SAPPHIRE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE);
         FuelRegistry.INSTANCE.add(REFINED_URANIUM, 500);
 
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_sword"), STEEL_SWORD);

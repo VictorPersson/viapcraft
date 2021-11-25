@@ -73,6 +73,8 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModItems.MITHRIL_SHOVEL));
 				stacks.add(new ItemStack(ModItems.MITHRIL_SWORD));
 				stacks.add(new ItemStack(ModItems.MITHRIL_HOE));
+				stacks.add(new ItemStack(ModBlocks.SAPPHIRE_ORE));
+				stacks.add(new ItemStack(ModItems.SAPPHIRE));
 			}).build();
 
 	@Override
