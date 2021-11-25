@@ -46,6 +46,8 @@
   "block.viapcraft.dark_ruby_ore": "Dark Ruby Ore",
   "block.viapcraft.thorium_ore": "Thorium Ore",
   "block.viapcraft.mithril_ore": "Mithril Ore",
+  "block.viapcraft.sapphire_ore": "Sapphire Ore",
+  "item.viapcraft.sapphire": "Sapphire",
   "item.viapcraft.mithril_ingot": "Mithril Ingot",
   "itemGroup.viapcraft.general_item_group_name": "Viapcraft",
   "itemGroup.viapcraft.advanced_item_group_name": "Magic ores",

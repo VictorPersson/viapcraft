@@ -35,6 +35,13 @@ public class ModBlocks {
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool());
 
+    public static final Block SAPPHIRE_ORE =  new Block(FabricBlockSettings
+            .of(Material.STONE)
+            // How long to break the block
+            .strength(4.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
     // New block, can add many attributes
     public static final Block DARK_RUBY_ORE = new ModBlockDarkRubyOre(FabricBlockSettings
             .of(Material.STONE)
@@ -77,5 +84,6 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "mithril_ore"), MITHRIL_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "coca_plant"), COCA_PLANT);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "jade_ore"), JADE_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE);
     }
 }
