@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "viapcraft:block/steel_slab"
+    },
+    "type=double": {
+      "model": "viapcraft:block/steel_block"
+    },
+    "type=top": {
+      "model": "viapcraft:block/steel_slab_top"
+    }
+  }
+}

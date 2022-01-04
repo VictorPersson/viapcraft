@@ -6,11 +6,13 @@ import net.viap.viapcraft.Viapcraft;
 import net.viap.viapcraft.armour.ArmorBase;
 import net.viap.viapcraft.armour.DarkRubyArmorMaterial;
 import net.viap.viapcraft.armour.TurtleArmorMaterial;
+import net.viap.viapcraft.blocks.NavigatorBlock;
 import net.viap.viapcraft.crops.ItemCocaSeed;
 import net.viap.viapcraft.food.CocaLeafFoodComponent;
 import net.viap.viapcraft.food.CocaineFoodComponent;
 import net.viap.viapcraft.food.LSDFoodComponent;
 import net.viap.viapcraft.food.MarijuanaFoodComponent;
+import net.viap.viapcraft.stairs.ModStairsBlock;
 import net.viap.viapcraft.tools.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -39,6 +41,12 @@ public class ModItems {
     public static final BlockItem THORIUM_ORE = new BlockItem(ModBlocks.THORIUM_ORE, new Item.Settings());
     public static final BlockItem MITHRIL_ORE = new BlockItem(ModBlocks.MITHRIL_ORE, new Item.Settings());
     public static final BlockItem SAPPHIRE_ORE = new BlockItem(ModBlocks.SAPPHIRE_ORE, new Item.Settings());
+    public static final BlockItem STEEL_BLOCK = new BlockItem(ModBlocks.STEEL_BLOCK, new Item.Settings());
+    public static final BlockItem STEEL_STAIRS = new BlockItem(ModBlocks.STEEL_STAIRS, new Item.Settings());
+    public static final BlockItem STEEL_SLAB = new BlockItem(ModBlocks.STEEL_SLAB, new Item.Settings());
+    public static final BlockItem STEEL_FENCE_GATE = new BlockItem(ModBlocks.STEEL_FENCE_GATE, new Item.Settings());
+    public static final BlockItem STEEL_FENCE = new BlockItem(ModBlocks.STEEL_FENCE, new Item.Settings());
+    public static final BlockItem NAVIGATOR_BLOCK = new BlockItem(ModBlocks.NAVIGATOR_BLOCK, new Item.Settings());
 
     // FOODS:
     public static final Item LSD = new Item(new Item.Settings().group(ItemGroup.FOOD).food(LSDFoodComponent.LSD));
@@ -117,6 +125,12 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "refined_uranium"), REFINED_URANIUM);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "sapphire"), SAPPHIRE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_slab"), STEEL_SLAB);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_stairs"), STEEL_STAIRS);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_block"), STEEL_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_fence"), STEEL_FENCE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_fence_gate"), STEEL_FENCE_GATE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "navigator_block"), NAVIGATOR_BLOCK);
         FuelRegistry.INSTANCE.add(REFINED_URANIUM, 500);
 
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_sword"), STEEL_SWORD);

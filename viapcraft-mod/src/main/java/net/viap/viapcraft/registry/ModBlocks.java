@@ -1,15 +1,16 @@
 package net.viap.viapcraft.registry;
 
+import net.minecraft.block.*;
 import net.viap.viapcraft.Viapcraft;
+import net.viap.viapcraft.blocks.NavigatorBlock;
 import net.viap.viapcraft.crops.ModBlockCocaPlant;
 import net.viap.viapcraft.ores.ModBlockDarkRubyOre;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.viap.viapcraft.stairs.ModStairsBlock;
 
 public class ModBlocks {
 
@@ -28,17 +29,56 @@ public class ModBlocks {
             // Makes the block glow
             .luminance(0));
 
-    public static final Block JADE_ORE =  new Block(FabricBlockSettings
+    public static final Block NAVIGATOR_BLOCK = new NavigatorBlock(FabricBlockSettings
+            .of(Material.PISTON)
+            .breakByTool(FabricToolTags.PICKAXES, 3)
+            .requiresTool()
+            .strength(9.0f, 100.f)
+            .luminance(1));
+
+    public static final Block JADE_ORE = new Block(FabricBlockSettings
             .of(Material.STONE)
             // How long to break the block
             .strength(4.0f)
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool());
 
-    public static final Block SAPPHIRE_ORE =  new Block(FabricBlockSettings
+    public static final Block STEEL_BLOCK = new Block(FabricBlockSettings
             .of(Material.STONE)
             // How long to break the block
             .strength(4.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block SAPPHIRE_ORE = new Block(FabricBlockSettings
+            .of(Material.STONE)
+            // How long to break the block
+            .strength(4.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_STAIRS = new ModStairsBlock(ModBlocks.STEEL_BLOCK.getDefaultState(),
+            FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_SLAB = new SlabBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_FENCE = new FenceBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_FENCE_GATE = new FenceGateBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool());
 
@@ -85,5 +125,11 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "coca_plant"), COCA_PLANT);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "jade_ore"), JADE_ORE);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_stairs"), STEEL_STAIRS);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_slab"), STEEL_SLAB);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_block"), STEEL_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_fence"), STEEL_FENCE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_fence_gate"), STEEL_FENCE_GATE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "navigator_block"), NAVIGATOR_BLOCK);
     }
 }

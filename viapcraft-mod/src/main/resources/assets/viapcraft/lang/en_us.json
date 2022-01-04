@@ -4,6 +4,11 @@
   "item.viapcraft.liquid_iron": "Liquid Iron",
   "item.viapcraft.staff_of_minerals": "Staff of Minerals",
   "block.viapcraft.jade_ore": "Jade Ore",
+  "block.viapcraft.steel_block": "Steel Block",
+  "block.viapcraft.steel_slab": "Steel Slab",
+  "block.viapcraft.steel_stairs": "Steel Stairs",
+  "block.viapcraft.steel_fence_gate": "Steel Fence Gate",
+  "block.viapcraft.steel_fence": "Steel Fence",
   "itemGroup.viapcraft.viapcraft": "Viapcraft",
   "item.viapcraft.dark_ruby": "Dark ruby",
   "item.viapcraft.thorium_ingot": "Thorium Ingot",
@@ -51,5 +56,6 @@
   "item.viapcraft.mithril_ingot": "Mithril Ingot",
   "itemGroup.viapcraft.general_item_group_name": "Viapcraft",
   "itemGroup.viapcraft.advanced_item_group_name": "Magic ores",
-  "item.viapcraft.stone_dagger": "stone_dagger"
+  "item.viapcraft.stone_dagger": "Stone dagger",
+  "block.viapcraft.navigator_block": "Navigator Block"
 }

@@ -8,6 +8,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.viap.viapcraft.utilities.ModTags;
 
 import java.util.Objects;
 
@@ -58,13 +59,14 @@ public class StaffOfMinerals extends Item {
     // Check if the block found is a valuble block, return true
     private boolean isValuableBLock(Block block) {
         // Will refactor this using tags later
-        return block == Blocks.COAL_ORE || block == Blocks.DEEPSLATE_COAL_ORE || block == Blocks.IRON_ORE || block == Blocks.DIAMOND_ORE;
+        // return block == Blocks.COAL_ORE || block == Blocks.DEEPSLATE_COAL_ORE || block == Blocks.IRON_ORE || block == Blocks.DIAMOND_ORE;
+        return block.getDefaultState().isIn(ModTags.Blocks.VALUABLE_BLOCKS);
     }
 
     // When block found, prints message to player with coordinates in the lower action bar (false)
     private void outPutCoordinates(Block blockFound, BlockPos pos, PlayerEntity player) {
         // Send message to player
-        player.sendMessage(new LiteralText("Found " + blockFound.asItem().getName().getString() + "at ("
-                + pos.getX() + ", " + (pos.getY() - player.getY() + 1) + ", " + pos.getZ() + ")" + "| You are at: " + player.getY()), false);
+        player.sendMessage(new LiteralText("Found " + blockFound.asItem().getName().getString() + " at ("
+                + pos.getX() + ", " + (pos.getY() - player.getY() + 1) + ", " + pos.getZ() + ")" + " | You are at: " + player.getY()), false);
     }
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "viapcraft:blocks/steel_block",
+    "top": "viapcraft:blocks/steel_block",
+    "side": "viapcraft:blocks/steel_block"
+  }
+}
