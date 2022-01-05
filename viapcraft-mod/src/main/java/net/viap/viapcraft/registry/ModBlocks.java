@@ -2,7 +2,7 @@ package net.viap.viapcraft.registry;
 
 import net.minecraft.block.*;
 import net.viap.viapcraft.Viapcraft;
-import net.viap.viapcraft.blocks.NavigatorBlock;
+import net.viap.viapcraft.blocks.*;
 import net.viap.viapcraft.crops.ModBlockCocaPlant;
 import net.viap.viapcraft.ores.ModBlockDarkRubyOre;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -82,6 +82,32 @@ public class ModBlocks {
             .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool());
 
+    public static final Block STEEL_PRESSURE_PLATE = new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_BUTTON = new ModStoneButtonBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool());
+
+    public static final Block STEEL_TRAPDOOR = new ModTrapdoorBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool()
+            .nonOpaque());
+
+    public static final Block STEEL_DOOR = new ModDoorBlock(FabricBlockSettings
+            .of(Material.METAL)
+            .strength(5.0f)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .requiresTool()
+            .nonOpaque());
+
     // New block, can add many attributes
     public static final Block DARK_RUBY_ORE = new ModBlockDarkRubyOre(FabricBlockSettings
             .of(Material.STONE)
@@ -130,6 +156,10 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_block"), STEEL_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_fence"), STEEL_FENCE);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_fence_gate"), STEEL_FENCE_GATE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_pressure_plate"), STEEL_PRESSURE_PLATE);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_button"), STEEL_BUTTON);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_door"), STEEL_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "steel_trapdoor"), STEEL_TRAPDOOR);
         Registry.register(Registry.BLOCK, new Identifier(Viapcraft.MOD_ID, "navigator_block"), NAVIGATOR_BLOCK);
     }
 }

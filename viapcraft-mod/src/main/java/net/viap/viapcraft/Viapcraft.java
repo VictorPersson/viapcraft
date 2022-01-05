@@ -1,8 +1,10 @@
 package net.viap.viapcraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -80,6 +82,10 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.STEEL_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.STEEL_FENCE));
 				stacks.add(new ItemStack(ModBlocks.STEEL_FENCE_GATE));
+				stacks.add(new ItemStack(ModBlocks.STEEL_PRESSURE_PLATE));
+				stacks.add(new ItemStack(ModBlocks.STEEL_BUTTON));
+				stacks.add(new ItemStack(ModBlocks.STEEL_TRAPDOOR));
+				stacks.add(new ItemStack(ModBlocks.STEEL_DOOR));
 				stacks.add(new ItemStack(ModBlocks.NAVIGATOR_BLOCK));
 			}).build();
 
@@ -91,6 +97,9 @@ public class Viapcraft implements ModInitializer {
 
 		ModItems.registerItems();
 		ModBlocks.registerBlocks();
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_TRAPDOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_DOOR, RenderLayer.getCutout());
 
 		LOGGER.info("Hello Fabric world!");
 	}

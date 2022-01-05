@@ -46,6 +46,10 @@ public class ModItems {
     public static final BlockItem STEEL_SLAB = new BlockItem(ModBlocks.STEEL_SLAB, new Item.Settings());
     public static final BlockItem STEEL_FENCE_GATE = new BlockItem(ModBlocks.STEEL_FENCE_GATE, new Item.Settings());
     public static final BlockItem STEEL_FENCE = new BlockItem(ModBlocks.STEEL_FENCE, new Item.Settings());
+    public static final BlockItem STEEL_BUTTON = new BlockItem(ModBlocks.STEEL_BUTTON, new Item.Settings());
+    public static final BlockItem STEEL_DOOR = new BlockItem(ModBlocks.STEEL_DOOR, new Item.Settings());
+    public static final BlockItem STEEL_TRAPDOOR = new BlockItem(ModBlocks.STEEL_TRAPDOOR, new Item.Settings());
+    public static final BlockItem STEEL_PRESSURE_PLATE = new BlockItem(ModBlocks.STEEL_PRESSURE_PLATE, new Item.Settings());
     public static final BlockItem NAVIGATOR_BLOCK = new BlockItem(ModBlocks.NAVIGATOR_BLOCK, new Item.Settings());
 
     // FOODS:
@@ -130,6 +134,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_block"), STEEL_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_fence"), STEEL_FENCE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_fence_gate"), STEEL_FENCE_GATE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_button"), STEEL_BUTTON);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_pressure_plate"), STEEL_PRESSURE_PLATE);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_door"), STEEL_DOOR);
+        Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_trapdoor"), STEEL_TRAPDOOR);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "navigator_block"), NAVIGATOR_BLOCK);
         FuelRegistry.INSTANCE.add(REFINED_URANIUM, 500);
 
