@@ -1,16 +1,18 @@
 # Viapcraft :crystal_ball:
 
-### Minecraft 1.17.1 Mod developed with the [Fabric API](https://fabricmc.net/)
+### Minecraft 1.18.1 Mod developed with the [Fabric API](https://fabricmc.net/)
 * Currently in development.
 
 #### How to run & contribute.
-1. Clone this repo
-2. Open your IDE, [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
-3. Navigatie to the repo and open the `build.gradle` file (open as project)
- > 3.1 NOTE: If [this elephant icon](https://i.imgur.com/3Sd7nny.png) appears in the top right corner, press it. 
-4. After the project is done building, go to the menu option `Run > Edit configurations`
-5. Select `Application > Minecraft Client` [(should look like this)](https://i.imgur.com/zd2nV3Q.png) and press OK
-6. Now you should be able to run the mod by pressing the "Run" button.
+1. [Download](https://www.oracle.com/java/technologies/downloads/#jdk17-windows) Java 17, [make sure](https://imgur.com/a/xBqna5W) no other version of Java is insalled. 
+> 1.1 NOTE: If you need to have other Java versions insalled for other projects, make sure your IDE and gradle.properies use and point to Java 17 in this project. 
+3. Clone this repo
+4. Open your IDE, ex [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows)
+5. Navigatie to the repo and open the `build.gradle` file (open as project)
+ > 5.1 NOTE: If [this elephant icon](https://i.imgur.com/3Sd7nny.png) appears in the top right corner, press it. 
+6. After the project is done building, go to the menu option `Run > Edit configurations`
+7. Select `Application > Minecraft Client` [(should look like this)](https://imgur.com/PvWCClB) and press OK if all checks out (note Java 17)
+8. Now you should be able to run the mod by pressing the "Run" button.
 
 #### Texture changes:
 * All items which spawn in the world, such as Ore blocks, should be `16x16` pixels in size. 
