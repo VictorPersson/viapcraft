@@ -44,6 +44,10 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModItems.THORIUM_INGOT));
 				stacks.add(new ItemStack(ModBlocks.MITHRIL_ORE));
 				stacks.add(new ItemStack(ModItems.MITHRIL_INGOT));
+				stacks.add(new ItemStack(ModItems.MITHRIL_HELMET));
+				stacks.add(new ItemStack(ModItems.MITHRIL_CHESTPLATE));
+				stacks.add(new ItemStack(ModItems.MITHRIL_LEGGINGS));
+				stacks.add(new ItemStack(ModItems.MITHRIL_BOOTS));
 				stacks.add(new ItemStack(ModItems.LSD));
 				stacks.add(new ItemStack(ModItems.COCAINE));
 				stacks.add(new ItemStack(ModItems.MARIJUANA));

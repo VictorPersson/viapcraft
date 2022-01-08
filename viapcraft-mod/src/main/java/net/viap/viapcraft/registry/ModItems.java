@@ -3,9 +3,7 @@ package net.viap.viapcraft.registry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.viap.viapcraft.Viapcraft;
-import net.viap.viapcraft.armour.ArmorBase;
-import net.viap.viapcraft.armour.DarkRubyArmorMaterial;
-import net.viap.viapcraft.armour.TurtleArmorMaterial;
+import net.viap.viapcraft.armour.*;
 import net.viap.viapcraft.blocks.NavigatorBlock;
 import net.viap.viapcraft.crops.ItemCocaSeed;
 import net.viap.viapcraft.food.CocaLeafFoodComponent;
@@ -94,6 +92,15 @@ public class ModItems {
     public static final ArmorMaterial DARK_RUBY_ARMOR = new DarkRubyArmorMaterial();
     public static final ArmorMaterial TURTLE_ARMOR = new TurtleArmorMaterial();
 
+    public static final Item MITHRIL_HELMET = registerItem("mithril_armor_helmet", new ModArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.HEAD, new FabricItemSettings().group(ItemGroup.COMBAT)));
+    public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_armor_chestplate", new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.CHEST, new FabricItemSettings().group(ItemGroup.COMBAT)));
+    public static final Item MITHRIL_LEGGINGS = registerItem("mithril_armor_leggings", new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.LEGS, new FabricItemSettings().group(ItemGroup.COMBAT)));
+    public static final Item MITHRIL_BOOTS = registerItem("mithril_armor_boots", new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlot.FEET, new FabricItemSettings().group(ItemGroup.COMBAT)));
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, name), item);
+    }
+
     // Register the item to the game, needs to be called in main class Viapcraft
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby"), DARK_RUBY);
@@ -109,11 +116,13 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "thorium_ingot"), THORIUM_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_ore"), MITHRIL_ORE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "mithril_ingot"), MITHRIL_INGOT);
+
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "lsd"), LSD);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "marijuana"), MARIJUANA);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "cocaine"), COCAINE);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_seed"), COCA_SEED);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "coca_leaf_food"), COCA_LEAF);
+
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_helmet"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.HEAD));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_chest"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "dark_ruby_armor_legs"), new ArmorBase(DARK_RUBY_ARMOR, EquipmentSlot.LEGS));
@@ -121,6 +130,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_chest"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_legs"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "turtle_armor_feet"), new ArmorBase(TURTLE_ARMOR, EquipmentSlot.FEET));
+
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "stone_dagger"), STONE_DAGGER);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "liquid_iron"), LIQUID_IRON);
         Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, "steel_ingot"), STEEL_INGOT);
