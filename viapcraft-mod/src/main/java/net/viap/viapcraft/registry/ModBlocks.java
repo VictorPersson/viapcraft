@@ -1,6 +1,7 @@
 package net.viap.viapcraft.registry;
 
 import net.minecraft.block.*;
+import net.minecraft.util.DyeColor;
 import net.viap.viapcraft.Viapcraft;
 import net.viap.viapcraft.blocks.*;
 import net.viap.viapcraft.crops.ModBlockCocaPlant;
