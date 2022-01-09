@@ -30,6 +30,7 @@ public class Viapcraft implements ModInitializer {
 			() -> new ItemStack(ModItems.DARK_RUBY)
 	);
 */
+	/*
 	// More advanced way of making an item group, custom icon vanilla/mod items.
 	public static final ItemGroup ADVANCED_GROUP = FabricItemGroupBuilder.create(
 					new Identifier(MOD_ID, "advanced_item_group_name"))
@@ -92,6 +93,7 @@ public class Viapcraft implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.STEEL_DOOR));
 				stacks.add(new ItemStack(ModBlocks.NAVIGATOR_BLOCK));
 			}).build();
+			**/
 
 	@Override
 	public void onInitialize() {
@@ -99,8 +101,8 @@ public class Viapcraft implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		ModItems.registerItems();
-		ModBlocks.registerBlocks();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_TRAPDOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STEEL_DOOR, RenderLayer.getCutout());

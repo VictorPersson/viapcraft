@@ -13,8 +13,15 @@ import net.viap.viapcraft.registry.ModItems;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    MITHRIL("mithril_armor", 40, new int[]{5, 4, 6, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
+
+    MITHRIL("mithril_armor", 40, new int[]{5, 4, 6, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(ModItems.MITHRIL_INGOT);
+    }),
+    TURTLE("turtle_armor", 30, new int[]{2, 4, 5, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(Items.SCUTE);
+    }),
+    DARK_RUBY("dark_ruby_armor", 40, new int[]{2, 5, 6, 3}, 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(ModItems.DARK_RUBY);
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

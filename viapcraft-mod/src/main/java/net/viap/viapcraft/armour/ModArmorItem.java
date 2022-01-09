@@ -22,8 +22,6 @@ public class ModArmorItem extends ArmorItem {
         super(material, slot, settings);
     }
 
-
-
     // Creates a Map (object), with key ArmorMaterial as Mithril and value StatusEffect as Glowing
     public static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP = (
             new ImmutableMap.Builder<ArmorMaterial, StatusEffect>()).put(ModArmorMaterial.MITHRIL, StatusEffects.RESISTANCE).build();
