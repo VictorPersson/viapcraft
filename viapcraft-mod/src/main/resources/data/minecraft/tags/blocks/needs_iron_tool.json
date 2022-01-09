@@ -3,6 +3,17 @@
   "values": [
     "viapcraft:dark_ruby_block",
     "viapcraft:dark_ruby_ore",
-    "viapcraft:sapphire_ore"
+    "viapcraft:sapphire_ore",
+    "viapcraft:steel_block",
+    "viapcraft:dark_ruby_block",
+    "viapcraft:navigator_block",
+    "viapcraft:steel_stairs",
+    "viapcraft:steel_slab",
+    "viapcraft:steel_fence",
+    "viapcraft:steel_fence_gate",
+    "viapcraft:steel_button",
+    "viapcraft:steel_pressure_plate",
+    "viapcraft:steel_door",
+    "viapcraft:steel_trapdoor"
   ]
 }

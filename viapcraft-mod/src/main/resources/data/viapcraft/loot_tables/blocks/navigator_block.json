@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "viapcraft:steel_button"
+          "name": "viapcraft:navigator_block"
         }
       ],
       "conditions": [

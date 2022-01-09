@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "viapcraft:steel_fence"
+          "name": "viapcraft:steel_door"
         }
       ],
       "conditions": [

@@ -87,16 +87,17 @@ public class ModBlocks {
     public static final Block STEEL_PRESSURE_PLATE = registerBlock("steel_pressure_plate", new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            .requiresTool()));
+            //.requiresTool()
+            ));
 
     public static final Block STEEL_BUTTON = registerBlock("steel_button", new ModStoneButtonBlock(FabricBlockSettings
             .of(Material.METAL)
-            .strength(5.0f)
+            .strength(1.5f)
             .requiresTool()));
 
     public static final Block STEEL_TRAPDOOR = registerBlock("steel_trapdoor", new ModTrapdoorBlock(FabricBlockSettings
             .of(Material.METAL)
-            .strength(5.0f)
+            .strength(2.0f)
             .requiresTool()
             .nonOpaque()));
 
