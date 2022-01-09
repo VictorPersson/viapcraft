@@ -86,6 +86,9 @@ public class ModItems {
     public static final Item DARK_RUBY_LEGGINGS = registerItem("dark_ruby_armor_leggings", new ArmorItem(ModArmorMaterial.DARK_RUBY, EquipmentSlot.LEGS, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final Item DARK_RUBY_BOOTS = registerItem("dark_ruby_armor_boots", new ArmorItem(ModArmorMaterial.DARK_RUBY, EquipmentSlot.FEET, new FabricItemSettings().group(ItemGroup.COMBAT)));
 
+    // Horse armor
+    public static final Item MITHRIL_HORSE_ARMOR = registerItem("mithril_horse_armor", new HorseArmorItem(13, "mithril", new FabricItemSettings().group(ItemGroup.MISC)));
+
     // Register the item to the game, needs to be called in main class Viapcraft
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Viapcraft.MOD_ID, name), item);
