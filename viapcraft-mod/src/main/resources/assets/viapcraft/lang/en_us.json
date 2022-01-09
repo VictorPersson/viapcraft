@@ -38,18 +38,20 @@
   "item.viapcraft.mithril_hoe": "Mithril Hoe",
   "item.viapcraft.mithril_sword": "Mithril Sword",
 
-  "item.viapcraft.mithril_helmet": "Mithril Helmet",
-  "item.viapcraft.mithril_chestplate": "Mithril Chestplate",
-  "item.viapcraft.mithril_leggings": "Mithril Legs",
-  "item.viapcraft.mithril_boots": "Mithril Boots",
+  "item.viapcraft.mithril_armor_helmet": "Mithril Helmet",
+  "item.viapcraft.mithril_armor_chestplate": "Mithril Chestplate",
+  "item.viapcraft.mithril_armor_leggings": "Mithril Legs",
+  "item.viapcraft.mithril_armor_boots": "Mithril Boots",
 
   "item.viapcraft.dark_ruby_armor_helmet": "Dark Ruby Helmet",
-  "item.viapcraft.dark_ruby_armor_chest": "Dark Ruby Chestplate",
-  "item.viapcraft.dark_ruby_armor_legs": "Dark Ruby Legs",
-  "item.viapcraft.dark_ruby_armor_feet": "Dark Ruby Boots",
-  "item.viapcraft.turtle_armor_chest": "Turtle Armor Chestplate",
-  "item.viapcraft.turtle_armor_legs": "Turtle Armor Legs",
-  "item.viapcraft.turtle_armor_feet": "Turtle Armor Boots",
+  "item.viapcraft.dark_ruby_armor_chestplate": "Dark Ruby Chestplate",
+  "item.viapcraft.dark_ruby_armor_leggings": "Dark Ruby Legs",
+  "item.viapcraft.dark_ruby_armor_boots": "Dark Ruby Boots",
+
+  "item.viapcraft.turtle_armor_chestplate": "Turtle Armor Chestplate",
+  "item.viapcraft.turtle_armor_leggings": "Turtle Armor Legs",
+  "item.viapcraft.turtle_armor_boots": "Turtle Armor Boots",
+
   "item.viapcraft.lsd": "LSD",
   "item.viapcraft.cocaine": "Cocaine",
   "block.viapcraft.coca_plant": "Coca Plant",
@@ -64,8 +66,8 @@
   "block.viapcraft.sapphire_ore": "Sapphire Ore",
   "item.viapcraft.sapphire": "Sapphire",
   "item.viapcraft.mithril_ingot": "Mithril Ingot",
-  "itemGroup.viapcraft.general_item_group_name": "Viapcraft",
-  "itemGroup.viapcraft.advanced_item_group_name": "Magic ores",
   "item.viapcraft.stone_dagger": "Stone dagger",
-  "block.viapcraft.navigator_block": "Navigator Block"
+  "block.viapcraft.navigator_block": "Navigator Block",
+
+  "itemGroup.viapcraft.viapcraft_main_item_group": "Viapcraft"
 }
