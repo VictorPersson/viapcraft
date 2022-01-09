@@ -22,21 +22,18 @@ public class ModBlocks {
     public static final Block DARK_RUBY_BLOCK = registerBlock("dark_ruby_block", new Block(FabricBlockSettings
             // Sound when you break the block
             .of(Material.METAL)
-            // Will break faster with pickaxes, 1-4 (2 is iron pickaxe)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             // Must have a tool to mine
             .requiresTool()
             // Diamond has hardness strength of 5.0f, 2nd param is how hard it is to explode
             .strength(4.5f, 25.0f)
             // Sound of block when you walk over it.
-            .sounds(BlockSoundGroup.METAL)
+            .sounds(BlockSoundGroup.STONE)
             // Makes the block glow
             .luminance(0)));
 
     // New block, can add many attributes
     public static final Block DARK_RUBY_ORE = registerBlock("dark_ruby_ore", new ModBlockDarkRubyOre(FabricBlockSettings
             .of(Material.STONE)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
             .strength(4.0f, 35.0f)
             .sounds(BlockSoundGroup.STONE)
@@ -44,7 +41,6 @@ public class ModBlocks {
 
     public static final Block NAVIGATOR_BLOCK = registerBlock("navigator_block", new NavigatorBlock(FabricBlockSettings
             .of(Material.PISTON)
-            //.breakByTool(FabricToolTags.PICKAXES, 3)
             .requiresTool()
             .strength(9.0f, 100.f)
             .luminance(1)));
@@ -53,77 +49,65 @@ public class ModBlocks {
             .of(Material.STONE)
             // How long to break the block
             .strength(4.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore", new Block(FabricBlockSettings
             .of(Material.STONE)
             // How long to break the block
             .strength(4.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block", new Block(FabricBlockSettings
             .of(Material.STONE)
             // How long to break the block
             .strength(4.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_STAIRS = registerBlock("steel_stairs", new ModStairsBlock(ModBlocks.STEEL_BLOCK.getDefaultState(),
             FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_SLAB = registerBlock("steel_slab", new SlabBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_FENCE = registerBlock("steel_fence", new FenceBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_FENCE_GATE = registerBlock("steel_fence_gate", new FenceGateBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_PRESSURE_PLATE = registerBlock("steel_pressure_plate", new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_BUTTON = registerBlock("steel_button", new ModStoneButtonBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()));
 
     public static final Block STEEL_TRAPDOOR = registerBlock("steel_trapdoor", new ModTrapdoorBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
             .nonOpaque()));
 
     public static final Block STEEL_DOOR = registerBlock("steel_door", new ModDoorBlock(FabricBlockSettings
             .of(Material.METAL)
             .strength(5.0f)
-            //.breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
             .nonOpaque()));
 
     public static final Block THORIUM_ORE = registerBlock("thorium_ore", new Block(FabricBlockSettings
             .of(Material.STONE)
-            //.breakByTool(FabricToolTags.PICKAXES, 3)
             .requiresTool()
             .strength(5.0f, 40.f)
             .sounds(BlockSoundGroup.STONE)
@@ -131,10 +115,9 @@ public class ModBlocks {
 
     public static final Block MITHRIL_ORE = registerBlock("mithril_ore", new Block(FabricBlockSettings
             .of(Material.STONE)
-            //.breakByTool(FabricToolTags.PICKAXES, 3)
             .requiresTool()
             .strength(6.0f, 100.f)
-            .sounds(BlockSoundGroup.STONE)
+            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
             .luminance(0)));
 
 
