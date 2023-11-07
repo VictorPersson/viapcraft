@@ -2,6 +2,10 @@ package net.viap.vpc;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.viap.vpc.block.custom.ModBlocks;
+import net.viap.vpc.enchantment.ModEnchantment;
+import net.viap.vpc.item.ModItemGroup;
+import net.viap.vpc.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +15,11 @@ public class Viapcraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroup();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModEnchantment.registerModEnchantment();
+		LOGGER.info("STARTING MOD ENVIRONMENT");
+		LOGGER.info("Viapcraft loaded!");
 	}
 }

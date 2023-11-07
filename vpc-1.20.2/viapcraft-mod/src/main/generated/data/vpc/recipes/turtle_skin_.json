@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:scute"
+    },
+    "T": {
+      "item": "vpc:turtle_skin"
+    }
+  },
+  "pattern": [
+    "S S",
+    "TST",
+    "TST"
+  ],
+  "result": {
+    "item": "vpc:turtle_skin_chestplate"
+  },
+  "show_notification": true
+}
