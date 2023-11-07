@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "vpc:turtle_skin_chestplate",
+    "vpc:turtle_skin_leggings",
+    "vpc:turtle_skin_boots"
+  ]
+}
