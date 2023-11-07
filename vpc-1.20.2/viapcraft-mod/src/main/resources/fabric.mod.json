@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vpc",
+	"version": "${version}",
+	"name": "Viapcraft",
+	"description": "Third iteration of the Viapcraft mod for Minecraft 1.20.2",
+	"authors": [
+		"Victor Persson"
+	],
+	"contact": {
+		"homepage": "https://github.com/VictorPersson/viapcraft",
+		"sources": "https://github.com/VictorPersson/viapcraft"
+	},
+	"license": "MIT",
+	"icon": "assets/vpc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.viap.vpc.Viapcraft"
+		],
+		"fabric-datagen": [
+			"net.viap.vpc.ViapcraftDataGenerator"
+		],
+		"client": [
+			"net.viap.vpc.ViapcraftClient"
+		]
+	},
+	"mixins": [
+		"vpc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
