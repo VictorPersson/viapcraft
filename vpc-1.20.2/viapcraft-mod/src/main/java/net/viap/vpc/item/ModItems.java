@@ -22,11 +22,9 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Viapcraft.MOD_ID, name), item);
     }
-
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
 
     }
-
     public static void registerModItems() {
         Viapcraft.LOGGER.info("Registering mod items for " + Viapcraft.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredients);
