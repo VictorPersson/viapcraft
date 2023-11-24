@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "vpc:turtle_skin"
+    }
+  },
+  "pattern": [
+    "   ",
+    "T T",
+    "T T"
+  ],
+  "result": {
+    "item": "vpc:turtle_skin_boots"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cactus"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "SSS",
+    " G "
+  ],
+  "result": {
+    "item": "vpc:festis_kaktus"
+  },
+  "show_notification": true
+}

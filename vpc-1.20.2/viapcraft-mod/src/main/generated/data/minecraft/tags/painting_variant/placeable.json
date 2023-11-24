@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "vpc:felix",
+      "required": false
+    },
+    {
+      "id": "vpc:jonte",
+      "required": false
+    },
+    {
+      "id": "vpc:victor",
+      "required": false
+    },
+    {
+      "id": "vpc:pidde",
+      "required": false
+    },
+    {
+      "id": "vpc:adam",
+      "required": false
+    },
+    {
+      "id": "vpc:catsmurf",
+      "required": false
+    },
+    {
+      "id": "vpc:summer",
+      "required": false
+    },
+    {
+      "id": "vpc:beer",
+      "required": false
+    },
+    {
+      "id": "vpc:poli",
+      "required": false
+    },
+    {
+      "id": "vpc:firedance",
+      "required": false
+    }
+  ]
+}

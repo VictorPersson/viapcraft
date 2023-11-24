@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Items;
+import net.viap.vpc.block.custom.ModBlocks;
 import net.viap.vpc.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -16,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     // This will create all the JSON files related to a new block
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
     }
 
     // This will create all the JSON files related to a new item
@@ -25,5 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TURTLE_SKIN_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TURTLE_SKIN_BOOTS));
         itemModelGenerator.register(ModItems.TURTLE_SKIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_NACRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NACRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FOSSILIZED_AMMOLITE, Models.GENERATED);
     }
 }

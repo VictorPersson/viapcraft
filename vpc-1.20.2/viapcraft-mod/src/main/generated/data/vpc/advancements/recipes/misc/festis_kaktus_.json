@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_scute": {
+    "has_cactus": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:scute"
+              "minecraft:cactus"
             ]
           }
         ]
@@ -15,33 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:turtle_skin_"
+        "recipe": "minecraft:festis_kaktus_"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_turtle_skin": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "vpc:turtle_skin"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_scute",
-      "has_turtle_skin"
+      "has_cactus"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:turtle_skin_"
+      "minecraft:festis_kaktus_"
     ]
   },
   "sends_telemetry_event": false

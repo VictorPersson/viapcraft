@@ -1,6 +1,7 @@
 package net.viap.vpc.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -9,6 +10,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.viap.vpc.Viapcraft;
+import net.viap.vpc.block.custom.ModBlocks;
+import net.viap.vpc.potion.ModPotions;
 
 public class ModItemGroup {
 
@@ -24,7 +27,11 @@ public class ModItemGroup {
                         entries.add(ModItems.TURTLE_SKIN_LEGGINGS);
                         entries.add(ModItems.TURTLE_SKIN_BOOTS);
                         entries.add(ModItems.TURTLE_SKIN);
-
+                        entries.add(ModItems.RAW_NACRE);
+                        entries.add(ModItems.NACRE);
+                        entries.add(ModItems.FOSSILIZED_AMMOLITE);
+                        entries.add(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
+                        entries.add(ModItems.FESTIS_KAKTUS);
                     }).build());
     public static void registerItemGroup() {}
 }

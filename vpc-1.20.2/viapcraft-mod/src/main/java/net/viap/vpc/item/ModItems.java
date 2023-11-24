@@ -18,6 +18,14 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.TURTLE_SKIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item TURTLE_SKIN_BOOTS = registerItem("turtle_skin_boots",
             new ArmorItem(ModArmorMaterials.TURTLE_SKIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item RAW_NACRE = registerItem("raw_nacre",
+            new Item(new FabricItemSettings()));
+    public static final Item NACRE = registerItem("nacre",
+            new Item(new FabricItemSettings()));
+    public static final Item FOSSILIZED_AMMOLITE = registerItem("fossilized_ammolite",
+            new Item(new FabricItemSettings()));
+    public static final Item FESTIS_KAKTUS = registerItem("festis_kaktus",
+            new Item(new FabricItemSettings().food(ModFoodComponents.FESTIS_KAKTUS)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Viapcraft.MOD_ID, name), item);

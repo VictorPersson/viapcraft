@@ -3,7 +3,8 @@
 	"package": "net.viap.vpc.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BrewingRecipeRegistryMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

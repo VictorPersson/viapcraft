@@ -6,6 +6,44 @@
 
   "item.vpc.turtle_skin_chestplate": "Turtle Chestplate",
   "item.vpc.turtle_skin_leggings": "Turtle Leggings",
-  "item.vpc.turtle_skin_boots": "Turtle Boots"
+  "item.vpc.turtle_skin_boots": "Turtle Boots",
 
+  "item.vpc.raw_nacre": "Raw Nacre",
+  "tooltip.vpc.raw_nacre.tooltip": "The Test",
+  "item.vpc.nacre": "Nacre",
+
+  "item.vpc.fossilized_ammolite": "Fossilized Ammolite",
+  "block.vpc.fossilized_ammolite_ore": "Fossilized Ammolite Ore",
+  "item.vpc.festis_kaktus": "Festis Kaktus",
+  "item.minecraft.potion.effect.festis_kaktus": "Festis Kaktus",
+
+  "painting.vpc.summer.title": "Skärgårdssommar",
+  "painting.vpc.summer.author": "Okänd hjälte",
+
+  "painting.vpc.victor.title": "Victor Per Erik Persson af Svartebagge",
+  "painting.vpc.victor.author": "Victor Persson",
+
+  "painting.vpc.jonte.title": "ADHD",
+  "painting.vpc.jonte.author": "Jonathan Ernest",
+
+  "painting.vpc.catsmurf.title": "Catsmurf",
+  "painting.vpc.catsmurf.author": "Ai",
+
+  "painting.vpc.felix.title": "Valonsk middag",
+  "painting.vpc.felix.author": "Felix Morau",
+
+  "painting.vpc.adam.title": "Boomer King",
+  "painting.vpc.adam.author": "Adam Hermansson",
+
+  "painting.vpc.pidde.title": "Banana Split Lord",
+  "painting.vpc.pidde.author": "Petter Pidde Månsson",
+
+  "painting.vpc.beer.title": "Das beer!",
+  "painting.vpc.beer.author": "PoliSoft",
+
+  "painting.vpc.firedance.title": "Fire dance",
+  "painting.vpc.firedance.author": "PoliSoft",
+
+  "painting.vpc.poli.title": "Poli Love",
+  "painting.vpc.poli.author": "PoliSoft"
 }

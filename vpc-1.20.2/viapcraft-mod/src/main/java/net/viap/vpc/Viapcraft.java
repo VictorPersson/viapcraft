@@ -6,6 +6,8 @@ import net.viap.vpc.block.custom.ModBlocks;
 import net.viap.vpc.enchantment.ModEnchantment;
 import net.viap.vpc.item.ModItemGroup;
 import net.viap.vpc.item.ModItems;
+import net.viap.vpc.paintings.ModPaintings;
+import net.viap.vpc.potion.ModPotions;
 import net.viap.vpc.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +23,8 @@ public class Viapcraft implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEnchantment.registerModEnchantment();
 		ModLootTableModifiers.modifyLootTable();
+		ModPotions.registerPotions();
+		ModPaintings.registerPaintings();
 		LOGGER.info("STARTING MOD ENVIRONMENT");
 		LOGGER.info("Viapcraft loaded!");
 	}

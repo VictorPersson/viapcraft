@@ -1,3 +1,9 @@
-// 1.20.2	2023-11-07T19:46:52.1959796	Viapcraft/Recipes
-1c541fd2e7ef4131bcdaef7e700008fbc9b13245 data\vpc\advancements\recipes\misc\turtle_skin_.json
-b136a262baaee2f215b50985bafa9034649c2481 data\vpc\recipes\turtle_skin_.json
+// 1.20.2	2023-11-24T22:28:15.5257618	Viapcraft/Recipes
+087bd92d7fef08b412c828616123b93ca7ac3658 data\vpc\advancements\recipes\misc\turtle_skin_boots_.json
+0b53ad15008232109d65599751b6d9212f5c6ac7 data\vpc\recipes\turtle_skin_leggings_.json
+c347b5f5f352af6361942dba42cab7c702158ac2 data\vpc\advancements\recipes\misc\festis_kaktus_.json
+d2f12fc672c5366315b7559b3191bd008f67b5e2 data\vpc\advancements\recipes\misc\turtle_skin_chestplate_.json
+1e86c3c7035e32ca10674194c174d421ee518df1 data\vpc\recipes\turtle_skin_boots_.json
+b136a262baaee2f215b50985bafa9034649c2481 data\vpc\recipes\turtle_skin_chestplate_.json
+ce3d7bfa51a55dd246b473234868fa4d33f711ee data\vpc\advancements\recipes\misc\turtle_skin_leggings_.json
+ae468ea247d69008359504dd7c73ba96c9c2ee7b data\vpc\recipes\festis_kaktus_.json

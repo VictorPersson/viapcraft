@@ -1,1 +1,3 @@
-// 1.20.2	2023-11-07T19:46:52.1919736	Viapcraft/Tags for minecraft:block
+// 1.20.2	2023-11-24T22:28:15.522263	Viapcraft/Tags for minecraft:block
+7ba7ba3b28910a542e05d48d33b10208562e4b80 data\minecraft\tags\blocks\mineable\pickaxe.json
+176a11aee0c1f1f6aab5edd1c7a21e2d99faf35f data\minecraft\tags\blocks\needs_diamond_tool.json

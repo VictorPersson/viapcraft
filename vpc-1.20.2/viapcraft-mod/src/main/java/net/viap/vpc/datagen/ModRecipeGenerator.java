@@ -18,6 +18,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TURTLE_SKIN_CHESTPLATE)
                 .pattern("S S")
                 .pattern("TST")
@@ -26,15 +27,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('T', ModItems.TURTLE_SKIN)
                 .criterion(hasItem(Items.SCUTE), conditionsFromItem(Items.SCUTE))
                 .criterion(hasItem(ModItems.TURTLE_SKIN), conditionsFromItem(ModItems.TURTLE_SKIN))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN) + "_"));
-        /*
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN_CHESTPLATE) + "_"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TURTLE_SKIN_LEGGINGS)
                 .pattern("TTT")
                 .pattern("T T")
                 .pattern("T T")
                 .input('T', ModItems.TURTLE_SKIN)
-                .criterion(hasItem(ModItems.TURTLE_SKIN), conditionsFromItem(ModItems.TURTLE_SKIN))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN) + "_"));
+                .criterion(hasItem(ModItems.TURTLE_SKIN), conditionsFromItem(ModItems.TURTLE_SKIN_BOOTS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN_LEGGINGS) + "_"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TURTLE_SKIN_BOOTS)
                 .pattern("   ")
@@ -42,7 +43,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern("T T")
                 .input('T', ModItems.TURTLE_SKIN)
                 .criterion(hasItem(ModItems.TURTLE_SKIN), conditionsFromItem(ModItems.TURTLE_SKIN))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN) + "_"));
-        */
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TURTLE_SKIN_BOOTS) + "_"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FESTIS_KAKTUS)
+                .pattern("CCC")
+                .pattern("SSS")
+                .pattern(" G ")
+                .input('S', Items.SUGAR)
+                .input('G', Items.GLASS_BOTTLE)
+                .input('C', Items.CACTUS)
+                .criterion(hasItem(Items.CACTUS), conditionsFromItem(Items.CACTUS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FESTIS_KAKTUS) + "_"));
     }
 }
