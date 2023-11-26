@@ -13,5 +13,6 @@ public class ViapcraftDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModPaintingVariantTagProvider::new);
+		pack.addProvider(ModPOIRagProvider::new);
 	}
 }

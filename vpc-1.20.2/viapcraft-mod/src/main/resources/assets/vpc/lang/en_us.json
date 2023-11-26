@@ -45,5 +45,7 @@
   "painting.vpc.firedance.author": "PoliSoft",
 
   "painting.vpc.poli.title": "Poli Love",
-  "painting.vpc.poli.author": "PoliSoft"
+  "painting.vpc.poli.author": "PoliSoft",
+
+  "entity.minecraft.villager.exotic_animal_trader": "Exotic Animal Trader"
 }
