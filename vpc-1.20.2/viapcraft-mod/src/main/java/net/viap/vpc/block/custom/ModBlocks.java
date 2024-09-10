@@ -12,7 +12,6 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.viap.vpc.Viapcraft;
 
 public class ModBlocks {
-
     public static final Block FOSSILIZED_AMMOLITE_ORE = registerBlock("fossilized_ammolite_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
     public static final Block MITHRIL_ORE = registerBlock("mithril_ore",

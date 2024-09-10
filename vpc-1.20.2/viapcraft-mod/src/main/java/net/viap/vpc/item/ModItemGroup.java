@@ -32,6 +32,8 @@ public class ModItemGroup {
                         entries.add(ModItems.FOSSILIZED_AMMOLITE);
                         entries.add(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
                         entries.add(ModItems.FESTIS_KAKTUS);
+                        entries.add(ModItems.MITHRIL_BAR);
+                        entries.add(ModItems.RAW_MITHRIL);
                     }).build());
     public static void registerItemGroup() {}
 }

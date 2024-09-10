@@ -26,6 +26,10 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item FESTIS_KAKTUS = registerItem("festis_kaktus",
             new Item(new FabricItemSettings().food(ModFoodComponents.FESTIS_KAKTUS)));
+    public static final Item RAW_MITHRIL = registerItem("raw_mithril",
+            new Item(new FabricItemSettings()));
+    public static final Item MITHRIL_BAR = registerItem("mithril_bar",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Viapcraft.MOD_ID, name), item);

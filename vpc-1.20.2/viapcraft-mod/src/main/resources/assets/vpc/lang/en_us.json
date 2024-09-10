@@ -12,6 +12,10 @@
   "tooltip.vpc.raw_nacre.tooltip": "The Test",
   "item.vpc.nacre": "Nacre",
 
+  "item.vpc.raw_mithril": "Raw Mithril",
+  "tooltip.vpc.raw_mithril.tooltip": "The strongest substance on earth",
+  "item.vpc.mithril_bar": "Mithril Bar",
+
   "item.vpc.fossilized_ammolite": "Fossilized Ammolite",
   "block.vpc.fossilized_ammolite_ore": "Fossilized Ammolite Ore",
   "item.vpc.festis_kaktus": "Festis Kaktus",
