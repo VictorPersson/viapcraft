@@ -18,6 +18,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MITHRIL_ORE);
     }
 
     // This will create all the JSON files related to a new item

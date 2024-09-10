@@ -28,12 +28,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         // The blocks that should have the needs diamond pickaxe requirement
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
+                .add(ModBlocks.FOSSILIZED_AMMOLITE_ORE,
+                        ModBlocks.DEEPSLATE_MITHRIL_ORE,
+                        ModBlocks.MITHRIL_ORE);
 
         // The blocks that should have the needs iron pickaxe requirement
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.FOSSILIZED_AMMOLITE_ORE,
-                        ModBlocks.FOSSILIZED_AMMOLITE_ORE,
                         ModBlocks.FOSSILIZED_AMMOLITE_ORE);
     }
 }
