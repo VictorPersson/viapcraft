@@ -17,5 +17,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.FOSSILIZED_AMMOLITE_ORE, oreDrops(ModBlocks.FOSSILIZED_AMMOLITE_ORE, ModItems.FOSSILIZED_AMMOLITE));;
+        addDrop(ModBlocks.DEEPSLATE_MITHRIL_ORE, oreDrops(ModBlocks.DEEPSLATE_MITHRIL_ORE, ModItems.RAW_MITHRIL));;
+        addDrop(ModBlocks.MITHRIL_ORE, oreDrops(ModBlocks.MITHRIL_ORE, ModItems.RAW_MITHRIL));;
     }
 }

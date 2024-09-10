@@ -18,6 +18,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FOSSILIZED_AMMOLITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MITHRIL_ORE);
     }
 
     // This will create all the JSON files related to a new item
@@ -28,6 +30,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TURTLE_SKIN_BOOTS));
         itemModelGenerator.register(ModItems.TURTLE_SKIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NACRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_MITHRIL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_BAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.NACRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOSSILIZED_AMMOLITE, Models.GENERATED);
     }
